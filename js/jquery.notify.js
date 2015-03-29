@@ -5,7 +5,7 @@
             type: 'default',
             delay: 5000,
             speed: 500,
-            position: 'top-left',
+            position: 'top-left'
         }, options);
 
         var position = options.position;
@@ -20,7 +20,7 @@
             $notifyWr = $('<div id="notify-wr-' + position + '" class="notify-wr" ></div>');
             setPositionOfNotifyWr($notifyWr, position);
             $notifyWr.css({
-                position: 'fixed',
+                position: 'fixed'
             });
             $('body').append($notifyWr);
         }
@@ -58,27 +58,32 @@
             case 'top-left' :
                 $element.css({
                     top: 0,
-                    left: 0,
+                    left: 0
                 });
                 break;
             case 'top-right' :
                 $element.css({
                     top: 0,
-                    right: 0,
+                    right: 0
                 });
                 break;
             case 'bottom-left' :
                 $element.css({
                     bottom: 0,
-                    left: 0,
+                    left: 0
                 });
                 break;
             case 'bottom-right' :
                 $element.css({
                     bottom: 0,
-                    right: 0,
+                    right: 0
                 });
                 break;
+            default :
+                $element.css({
+                    top: 0,
+                    left: 0
+                });
         }
     }
 })(jQuery);

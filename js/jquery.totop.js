@@ -26,7 +26,7 @@
         totopBtn.on('click.totop', function () {
             if (!totopBtn.data('prev-y')) {
                 var y = $(document).scrollTop();
-                totopBtn.data('prev-y', y)
+                totopBtn.data('prev-y', y);
                 window.scrollTo(0, 0);
             }
             else {
